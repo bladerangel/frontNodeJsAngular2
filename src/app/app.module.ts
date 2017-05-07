@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { FavoriteListComponent } from './components/favorite/favorite-list/favorite-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FavoriteListComponent
   ],
   imports: [
     BrowserModule,
