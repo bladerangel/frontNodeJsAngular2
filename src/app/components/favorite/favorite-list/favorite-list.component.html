@@ -1,6 +1,6 @@
 <strong>{{title}}</strong>
 
-Change color: <input type="text" (blur)="changeColor()"/>
+Change color: <input type="text" [(ngModel)]="color"/>
 
 <div class="container" [style.background]="color">
     <button (click)="showFavorites()" *ngIf="!favoritesVisible">View Favorites</button>
