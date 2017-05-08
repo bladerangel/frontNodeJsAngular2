@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    font-family: Helvetica, Arial;
+    font-family: helvetica, arial, serif;
 }
 
 .clearfix {
@@ -14,10 +14,10 @@ body {
 #content {
     width: 80%;
     min-height: 500px;
-    margin: 20px auto 0px;
+    margin: 20px auto 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px #ddd;
+    box-shadow: 0 0 5px #ddd;
     background: #eee;
 }
 
@@ -31,13 +31,12 @@ header .title-subtitle {
     border-bottom: 1px solid white;
     border-top: 1px solid white;
     color: white;
-    padding: 20px;
     margin-left: -65px;
-    padding-left: 65px;
+    padding: 20px 20px 20px 65px;
 }
 
 header h1, header p {
-    margin: 0px 0px 0px 15px;
+    margin: 0 0 0 15px;
 }
 
 header p {
@@ -51,8 +50,74 @@ header #logo {
     margin-top: 10px;
 }
 
+#favorites-list {
+    padding: 0;
+    margin: 0;
+}
+
+.favorite-item {
+    list-style: none;
+    width: 31%;
+    border: 1px solid #ddd;
+    height: 120px;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: gray;
+    background: white;
+    margin: 10px;
+}
+
+.favorite-item .content-data {
+    float: left;
+    margin-left: 20px;
+}
+
+.favorite-item h4 {
+    color: #444;
+    padding: 0;
+    margin: 5px 0 0;
+}
+
+.favorite-item .url {
+    color: #444;
+    padding: 0;
+    margin: 2px 0 0;
+    height: 45px;
+    overflow: hidden;
+}
+
+.btn {
+    font-size: 13px;
+    border: 1px solid #1976d2;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #ddd;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    background: #0075d9;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.btn-edit {
+    background: #0a0;
+    border-color: #59a600;
+}
+
+.btn-delete {
+    background: #e23237;
+    border-color: #f54747;
+}
+
+.btn-default {
+    background: #eaa615;
+    border-color: #cc941c;
+    margin-left: 0;
+}
+
 footer {
     width: 80%;
-    margin: 20px auto 0px;
+    margin: 20px auto 0;
     color: gray;
 }
