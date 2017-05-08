@@ -9,6 +9,7 @@ export class FavoriteListComponent {
     title: string;
     favorites: Array<string>;
     favoritesVisible: boolean;
+    color: string;
 
     constructor() {
         this.title = 'List Favorites:';
@@ -22,5 +23,9 @@ export class FavoriteListComponent {
 
     hideFavorites() {
         this.favoritesVisible = false;
+    }
+
+    changeColor() {
+        this.color = 'red';
     }
 }
