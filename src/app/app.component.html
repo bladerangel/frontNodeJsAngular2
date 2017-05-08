@@ -1,3 +1,15 @@
-<h1>{{title}}</h1>
-<h1>{{description}}</h1>
-<app-favorite-list></app-favorite-list>
+<header id="header">
+    <a href="#">
+        <img src="../assets/images/angularjs.png" id="logo"/>
+    </a>
+    <div class="title-subtitle">
+        <h1>{{title}}</h1>
+        <p>{{description}}</p>
+    </div>
+    <div class="clearfix"></div>
+</header>
+
+<section class="main">
+    <app-favorite-list></app-favorite-list>
+    <div class="clearfix"></div>
+</section>

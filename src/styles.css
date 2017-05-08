@@ -1,13 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
+    font-family: Helvetica, Arial;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+    text-decoration: none;
+    list-style: none;
+}
+
+#content {
+    width: 80%;
+    min-height: 500px;
+    margin: 20px auto 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ddd;
     background: #eee;
 }
 
-.borderBlack {
-    border: 5px solid black;
+header {
+    padding: 15px;
+    background: #229138;
 }
 
-.borderGreen {
-    border: 5px solid green;
+header .title-subtitle {
+    float: left;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    color: white;
+    padding: 20px;
+    margin-left: -65px;
+    padding-left: 65px;
+}
+
+header h1, header p {
+    margin: 0px 0px 0px 15px;
+}
+
+header p {
+    color: #ddd;
+}
+
+header #logo {
+    width: 65px;
+    display: block;
+    float: left;
+    margin-top: 10px;
+}
+
+footer {
+    width: 80%;
+    margin: 20px auto 0px;
+    color: gray;
 }
