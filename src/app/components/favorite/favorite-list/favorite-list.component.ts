@@ -11,11 +11,13 @@ import {Favorite} from '../models/favorite';
 })
 export class FavoriteListComponent implements OnInit {
     public title: string;
+    public loading: boolean;
     public favorites: Favorite[];
     public errorMessage;
 
     constructor(private favoriteService: FavoriteService) {
         this.title = 'List Favorites:';
+        this.loading = true;
     }
 
     ngOnInit() {
@@ -24,6 +26,7 @@ export class FavoriteListComponent implements OnInit {
                 (result) => {
                     console.log(result);
                     this.favorites = result.favorites;
+                    this.loading = false;
                 },
                 (error) => {
                     this.errorMessage = error;
