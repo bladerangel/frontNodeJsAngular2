@@ -3,17 +3,20 @@
     <form #formFavorite="ngForm" (ngSubmit)="onSubmit()">
         <label>Title:</label>
         <p>
-            <input type="text" name="title" #title="ngModel" [(ngModel)]="favorite.title"/>
+            <input type="text" name="title" #title="ngModel" [(ngModel)]="favorite.title" required/>
+            <span *ngIf="title.touched && !title.valid">Title is required</span>
         </p>
 
         <label>Description:</label>
         <p>
-            <input type="text" name="description" #description="ngModel" [(ngModel)]="favorite.description"/>
+            <textarea name="description" #description="ngModel" [(ngModel)]="favorite.description" required></textarea>
+            <span *ngIf="description.touched && !description.valid">Description is required</span>
         </p>
 
         <label>Url:</label>
         <p>
-            <input type="url" name="url" #url="ngModel" [(ngModel)]="favorite.url"/>
+            <input type="url" name="url" #url="ngModel" [(ngModel)]="favorite.url" required/>
+            <span *ngIf="url.touched && !url.valid">Url is invalid</span>
         </p>
 
         <input type="submit" [value]="titleSection"/>
