@@ -40,4 +40,10 @@ export class FavoriteService {
         return this.http.put(this.url + 'favorite/' + id, params, {headers})
             .map((res) => res.json());
     }
+
+    deleteFavorite(id: string) {
+        return this.http.delete(this.url + 'favorite/' + id)
+            .map((res) => res.json());
+    }
+
 }

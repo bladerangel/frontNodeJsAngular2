@@ -164,3 +164,11 @@ footer {
     margin: 20px auto 0;
     color: gray;
 }
+
+.confirm {
+    position: absolute;
+    margin-top: -70px;
+    background: white;
+    width: 275px;
+    text-align: center;
+}
