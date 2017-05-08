@@ -8,12 +8,14 @@ import {FavoriteListComponent} from './components/favorite/favorite-list/favorit
 import {FavoriteService} from './components/favorite/services/favorite.service';
 import {AppRoutingModule} from './app-routing.module';
 import { FavoriteDetailComponent } from './components/favorite/favorite-detail/favorite-detail.component';
+import { FavoriteAddComponent } from './components/favorite/favorite-add/favorite-add.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         FavoriteListComponent,
-        FavoriteDetailComponent
+        FavoriteDetailComponent,
+        FavoriteAddComponent
     ],
     imports: [
         BrowserModule,
