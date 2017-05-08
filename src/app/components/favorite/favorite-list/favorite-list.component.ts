@@ -10,6 +10,7 @@ import {Favorite} from '../models/favorite';
 })
 export class FavoriteListComponent implements OnInit {
     public title: string;
+    public favorites: Favorite[];
     public errorMessage;
 
     constructor(private favoriteService: FavoriteService) {
@@ -21,6 +22,7 @@ export class FavoriteListComponent implements OnInit {
             .subscribe(
                 (result) => {
                     console.log(result);
+                    this.favorites = result.favorites;
                 },
                 (error) => {
                     this.errorMessage = error;
