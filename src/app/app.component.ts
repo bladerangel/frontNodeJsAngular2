@@ -6,8 +6,8 @@ import {Component} from '@angular/core';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title: string;
-    description: string;
+    public title: string;
+    public description: string;
 
     constructor() {
         this.title = 'App favorite!';
