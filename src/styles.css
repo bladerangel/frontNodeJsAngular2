@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background: #eee;
+}
+
+.borderBlack {
+    border: 5px solid black;
+}
+
+.borderGreen {
+    border: 5px solid green;
+}
