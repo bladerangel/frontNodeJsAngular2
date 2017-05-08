@@ -26,6 +26,6 @@ export class FavoriteListComponent {
     }
 
     changeColor() {
-        this.color = 'red';
+        console.log(this.color);
     }
 }
