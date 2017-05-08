@@ -7,8 +7,20 @@ import {Component} from '@angular/core';
 })
 export class FavoriteListComponent {
     title: string;
+    favorites: Array<string>;
+    favoritesVisible: boolean;
 
     constructor() {
-        this.title = 'List';
+        this.title = 'List Favorites:';
+        this.favorites = ['youtube.com', 'google.com', 'twitter.com'];
+        this.favoritesVisible = false;
+    }
+
+    showFavorites() {
+        this.favoritesVisible = true;
+    }
+
+    hideFavorites() {
+        this.favoritesVisible = false;
     }
 }
