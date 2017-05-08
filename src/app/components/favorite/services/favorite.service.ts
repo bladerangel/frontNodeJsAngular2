@@ -24,4 +24,12 @@ export class FavoriteService {
         return this.http.get(this.url + 'favorite/' + id)
             .map((res) => res.json());
     }
+
+    addFavorite(favorite: Favorite) {
+        const params = JSON.stringify(favorite);
+        const headers = new Headers({'Content-Type': 'application/json'});
+
+        return this.http.post(this.url + 'favorite', params, {headers})
+            .map((res) => res.json());
+    }
 }
