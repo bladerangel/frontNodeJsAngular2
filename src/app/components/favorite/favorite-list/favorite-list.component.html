@@ -7,7 +7,7 @@
                 <a href="{{favorite.url}}" target="_blank" class="btn btn-default">
                     Go to favorite
                 </a>
-                <a href="{{favorite.url}}" target="_blank" class="btn btn-view">
+                <a [routerLink]="['/favorite', favorite._id]" class="btn btn-view">
                     View
                 </a>
                 <a href="{{favorite.url}}" target="_blank" class="btn btn-edit">
