@@ -11,10 +11,18 @@ import {Favorite} from '../models/favorite';
 })
 export class FavoriteAddComponent implements OnInit {
 
+    public titleSection: string;
+    public favorite: Favorite;
+
     constructor(private favoriteService: FavoriteService) {
+        this.titleSection = 'Create new favorite';
     }
 
     ngOnInit() {
+        this.favorite = new Favorite('', '', '');
     }
 
+    onSubmit() {
+        console.log(this.favorite);
+    }
 }

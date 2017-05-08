@@ -1,3 +1,21 @@
-<p>
-  favorite-add works!
-</p>
+<div class="favorite-box" *ngIf="favorite">
+    <h1>{{titleSection}}</h1>
+    <form #formFavorite="ngForm" (ngSubmit)="onSubmit()">
+        <label>Title:</label>
+        <p>
+            <input type="text" name="title" #title="ngModel" [(ngModel)]="favorite.title"/>
+        </p>
+
+        <label>Description:</label>
+        <p>
+            <input type="text" name="description" #description="ngModel" [(ngModel)]="favorite.description"/>
+        </p>
+
+        <label>Url:</label>
+        <p>
+            <input type="url" name="url" #url="ngModel" [(ngModel)]="favorite.url"/>
+        </p>
+
+        <input type="submit" [value]="titleSection"/>
+    </form>
+</div>
